@@ -13,6 +13,12 @@ int getValidatedInput(String prompt) {
       continue;
     }
 
+    // If the input is higher than 32^2-1, print an error message and continue the loop
+    if (int.parse(input) > 4294967295) {
+      print('Error: The number exceeds the 32-bit implementation of integers and must be less than 4294967295.');
+      continue;
+    }
+
     // Try to parse the input as an integer
     try {
       int value = int.parse(input);

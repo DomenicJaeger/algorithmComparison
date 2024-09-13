@@ -1,0 +1,1 @@
+// the actual main.dart is in the bin folder, follow the instructions in the comments to run the code
